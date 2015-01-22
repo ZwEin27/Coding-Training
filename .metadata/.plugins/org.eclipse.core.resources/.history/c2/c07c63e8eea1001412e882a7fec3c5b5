@@ -1,0 +1,52 @@
+package problems;
+
+
+//Definition for singly-linked list.
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int x) {
+        val = x;
+        next = null;
+    }
+}
+
+
+public class No_2_Add_Two_Numbers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	 public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+		 //ListNode curl1=l1,curl2=l2;
+		 ListNode returnLN = null;
+		 ListNode curRLN = null;
+		 while(l1.next!=null||l2.next!=null){
+			 int sum = l1.val + l2.val;
+			 int ao = 0;
+			 
+			 if (returnLN==null) {
+				 returnLN = new ListNode(sum%10);
+				 curRLN = returnLN;
+			 } else {
+				 curRLN.next = new ListNode(sum%10);
+				 curRLN = curRLN.next;
+			 }
+			 
+			 if (sum>=10){
+				 
+			 } else {
+				 ao = 1;
+			 }
+			 
+			 
+		 }
+		 
+		 
+		 
+		return l2;
+	 }
+	
+}
