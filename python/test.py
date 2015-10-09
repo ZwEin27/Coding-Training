@@ -1,10 +1,10 @@
 #!/usr/bin/env python
-from lc153 import Solution
+from lc064 import Solution
 
 
 s = Solution();
 
-result = s.findMin([4, 5, 6, 7, 0, 1, 2]);
+result = s.minPathSum([[1,3,1],[1,5,1],[4,2,1]]);
 
 print 'Result: \n', result;
 
