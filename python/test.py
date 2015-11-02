@@ -1,10 +1,10 @@
 #!/usr/bin/env python
-from lc064 import Solution
+from lc073 import Solution
 
 
 s = Solution();
-
-result = s.minPathSum([[1,3,1],[1,5,1],[4,2,1]]);
+# 
+result = s.setZeroes([[1]]);
 
 print 'Result: \n', result;
 
