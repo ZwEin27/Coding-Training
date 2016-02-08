@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+
+# not used
 from lc073 import Solution
 
 
@@ -15,5 +17,3 @@ print 'Result: \n', result;
 # print "one", (2*i + 3*j + 4) % 5
 
 # print "two", (i + 4*j) % 5
-
-        
