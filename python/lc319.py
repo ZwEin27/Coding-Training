@@ -6,7 +6,7 @@ class Solution(object):
         :rtype: int
         """
         import math
-        return math.sqrt(n) if n > 0 else 0
+        return int(math.sqrt(n)) if n > 0 else 0
 
 
         """ memory limit exceeded 
