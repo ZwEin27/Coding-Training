@@ -31,7 +31,7 @@ class Solution(object):
                 elif (live_count < 2 or live_count > 3) and val == 1:
                     board[i][j] = -1
 
-                print live_count, board[i][j]
+                # print live_count, board[i][j]
         # print board
         for i in range(m):
             for j in range(n): 
