@@ -20,13 +20,15 @@ class Solution(object):
                 for rel in rels:
                     tmp = [nums[i]]
                     tmp.extend(rel)
+                    tmp.sort()
                     ans.append(tmp)
         elif k == 1:
             for i in range(start, end):
                 ans.append([nums[i]])
         else:
             ans.append([])
-        
+
+        # print ans
         return ans
 
 if __name__ == '__main__':
