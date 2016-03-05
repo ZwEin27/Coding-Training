@@ -35,13 +35,12 @@ class Solution(object):
         if node.left:
             vals = self.dfs(node.left)
             for val in vals:
-                val_list.append(node.val+val)
+                val_list.append(str(node.val)+str(val))
 
         if node.right:
             vals = self.dfs(node.right)
             for val in vals:
-                val_list.append(node.val+val)
-
+                val_list.append(str(node.val)+str(val))
         if len(val_list) == 0:
             return [node.val]
 
