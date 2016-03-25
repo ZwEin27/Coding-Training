@@ -20,3 +20,5 @@ class Solution(object):
         if n <= 0: return False
         import math
         return (math.log10(n)/math.log10(2)) % 1 == 0
+
+
