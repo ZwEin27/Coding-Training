@@ -22,8 +22,11 @@ class Solution(object):
         return s == s[::-1]
 
 
-s = 'aabb'
-print Solution().partition(s)
+# s = 'aabb'
+# print Solution().partition(s)
+
+
+
 
 # n = 'aba'
 # print str(n)[::-1]
