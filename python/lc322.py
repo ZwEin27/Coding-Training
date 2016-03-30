@@ -12,6 +12,8 @@ class Solution(object):
 
 
         for x in range(amount+1):
+            if dp[x] < 0:
+                continue
             for c in coins:
                 if x+c <= amount:
                     if dp[x+c] < 0 or dp[x+c] > dp[x]+1:
