@@ -20,7 +20,7 @@ class Solution(object):
                 if i and j and dp[i][j]:
                     dp[i][j] = min(dp[i-1][j-1], dp[i-1][j], dp[i][j-1]) + 1
                 ans = max(ans, dp[i][j])
-        return ans
+        return ans*ans
 
 matrix = ['1']
 print Solution().maximalSquare(matrix)
