@@ -16,7 +16,6 @@ class Solution(object):
 
     def containSum(self, window_size, s, nums):
         sums = 0
-
         for i in range(len(nums)):
             sums += nums[i]
             if i >= window_size:
