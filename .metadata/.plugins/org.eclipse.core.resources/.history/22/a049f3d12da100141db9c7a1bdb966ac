@@ -1,7 +1,0 @@
-package problems;
-
-public class No_1_Two_Sum {
-	    public int[] twoSum(int[] numbers, int target) {
-			return numbers;
-	    }
-}
