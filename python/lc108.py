@@ -30,6 +30,3 @@ class Solution(object):
         if mid < end:
             node.right = self.func(nums, mid+1, end)
         return node
-
-
-        node.left
