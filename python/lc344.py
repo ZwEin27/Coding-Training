@@ -4,6 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
+        return s[::-1]
         # TLE
         # new_string = ''
         # for i in range(len(s)-1,-1,-1):
@@ -21,6 +22,7 @@ class Solution(object):
         #     del s[target_idx]
         #     cur_idx -= 1
         # return ''.join(s)
+
 
 
 s = 'hello'
