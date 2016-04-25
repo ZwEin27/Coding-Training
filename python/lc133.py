@@ -12,10 +12,12 @@ class Solution(object):
         :type node: UndirectedGraphNode
         :rtype: UndirectedGraphNode
         """
+        if not node:
+            return None
+
         stack = [node]
         cloned_graph_root = UndirectedGraphNode(node.label)
         ht = {node.label:cloned_graph_root}
-        cloned_nodes = []
         while stack:
             node = stack.pop()
             cnode = ht[node.label]
