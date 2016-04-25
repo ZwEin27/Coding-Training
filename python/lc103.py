@@ -12,7 +12,7 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         if not root:
-            return None
+            return []
 
         import math
         queue = [(root,0)]
@@ -20,9 +20,8 @@ class Solution(object):
 
         while queue:
             node, level = queue.pop(0)
-            if len(ans) < level:
+            if len(ans) < level+1:
                 ans.append([])
-
 
             if level % 2 == 0:
                 ans[level].append(node.val)
@@ -34,7 +33,3 @@ class Solution(object):
             if node.right:
                 queue.append((node.right, level+1))
         return ans
-
-ans = []
-ans.append([])
-print ans
