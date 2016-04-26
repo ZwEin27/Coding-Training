@@ -37,6 +37,5 @@ class Solution(object):
 
         right.next = head
         head = left.next
-
         left.next = None
         return head
