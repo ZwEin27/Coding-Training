@@ -6,20 +6,14 @@ class Solution(object):
         :type tickets: List[List[str]]
         :rtype: List[str]
         """
-        # import collections
-        # targets = collections.defaultdict(list)
-
         targets = {}
 
         for a, b in sorted(tickets):#[::-1]:
             targets.setdefault(a, [])
             targets[a].append(str(b))
 
-            # targets[a] += b,
-
         route = []
-        def visit(start):
-            # while targets[start]:
+        def visit(start):9427
             while start in targets.keys() and len(targets[start]) > 0:
                 end = targets[start].pop(0)
                 visit(end)
