@@ -50,7 +50,7 @@ class Trie(object):
         node = self.root
         for letter in prefix:
             node = node.childs.get(letter)
-            if not child:
+            if not node:
                 return False
         return True
 
