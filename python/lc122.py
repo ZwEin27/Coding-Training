@@ -1,11 +1,10 @@
-# http://bookshadow.com/weblog/2015/11/24/leetcode-best-time-to-buy-and-sell-stock-with-cooldown/
-
 class Solution(object):
     def maxProfit(self, prices):
         """
         :type prices: List[int]
         :rtype: int
         """
+
         if not prices:
             return 0
 
@@ -20,10 +19,9 @@ class Solution(object):
             sells[di] = max(buys[di-1]+prices[di], sells[di-1]+gap)
             # buys[di] = max(sells[di-2]-prices[di] if di > 1 else 0, buys[di-1]-gap)
             buys[di] = max(buys[di - 1] - gap, \
-                          sells[di - 2] - prices[di] if di > 1 else None)
+                          sells[di - 1] - prices[di] if di > 1 else None)
 
         return max(sells)
-
 
 
 
