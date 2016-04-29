@@ -23,7 +23,9 @@ class Solution(object):
         while stack and idx <= k:
             node = stack.pop(-1)
             tmp = node.right
+            idx += 1
             while tmp:
                 stack.append(tmp)
-                tmp = node.left
+                tmp = tmp.left
+
         return node.val
