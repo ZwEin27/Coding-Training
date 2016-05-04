@@ -8,7 +8,7 @@ class Solution(object):
             return 0
 
         size = len(nums)
-        if size <= 2:
+        if size < 2:
             return 0
         nums.sort()
         max_value = 0
