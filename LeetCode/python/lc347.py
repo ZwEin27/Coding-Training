@@ -10,11 +10,8 @@ class Solution(object):
             ht.setdefault(num, 0)
             ht[num] += 1
 
-        # for (k, v) in ht.items():
         nums = sorted(ht.items(), key=lambda x: x[1], reverse=True)
         nums = [_[0] for _ in nums]
-        # print nums
-        # nums = nums.keys()
         return nums[:k]
 
 nums = [1,1,1,2,2,3]
