@@ -1,5 +1,5 @@
-# LeetCode-OJ
-Practicing in LeetCode for preparing technical coding interviews
+# Coding Training
+Practicing for preparing technical coding interviews
 
 ## Note
 
