@@ -11,7 +11,6 @@
 # print test
 
 
-a = [1,2,3]
-b = [1,2,3,4]
+string = '{12}'
 
-print a.pop()
+print string[1:-1]
