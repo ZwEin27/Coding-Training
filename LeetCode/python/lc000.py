@@ -31,5 +31,15 @@ import numpy as np
 
 # l = [2,2,2]
 # print l.index(2)
+# from decimal import Decimal
+# print '%.e' % Decimal('0.00001')
+# import os
+# path = '/Users/ZwEin/job_works/StudentWork_USC-ISI/projects/WEDC/tests/data/san-francisco-maria-2.json'
+# drive, path_and_file = os.path.splitdrive(path)
+# path, file = os.path.split(path_and_file)
+# print path
+# print file
 
-print 1.*11/27
+
+import json
+json.dumps([{'bar': ('baz', None, 1.0, 2)}])
