@@ -44,7 +44,10 @@ import numpy as np
 # import json
 # json.dumps([{'bar': ('baz', None, 1.0, 2)}])
 
-t = (123, '111')
-k, v = t
-print k
-print v
+# t = (123, '111')
+# k, v = t
+# print k
+# print v
+
+
+print ord('a')
