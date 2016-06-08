@@ -52,7 +52,3 @@ class LRUCache:
             self.push_back(Node(key, value))
             if len(self.cache) > self.capacity:
                 self.pop_front()
-
-
-
-        
